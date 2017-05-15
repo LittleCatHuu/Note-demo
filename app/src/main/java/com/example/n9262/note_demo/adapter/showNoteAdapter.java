@@ -9,6 +9,8 @@ import android.widget.CursorAdapter;
 import android.widget.TextView;
 
 import com.example.n9262.note_demo.R;
+import com.example.n9262.note_demo.utils.TextFormatUtil;
+
 public class ShowNoteAdapter extends CursorAdapter {
 
     private Context context;
