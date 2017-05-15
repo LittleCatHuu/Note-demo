@@ -1,9 +1,5 @@
 package com.example.n9262.note_demo.adapter;
 
-/**
- * Created by n9262 on 2017/5/15.
- */
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

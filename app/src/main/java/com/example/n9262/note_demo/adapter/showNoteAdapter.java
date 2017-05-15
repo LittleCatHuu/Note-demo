@@ -11,12 +11,12 @@ import android.widget.TextView;
 import com.example.n9262.note_demo.R;
 import com.example.n9262.note_demo.utils.TextFormatUtil;
 
-public class ShowNoteAdapter extends CursorAdapter {
+public class showNoteAdapter extends CursorAdapter {
 
     private Context context;
     private Cursor cursor;
 
-    public ShowNoteAdapter(Context context, Cursor cursor) {
+    public showNoteAdapter(Context context, Cursor cursor) {
         super(context, cursor);
         this.context = context;
         this.cursor = cursor;

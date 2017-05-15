@@ -15,6 +15,11 @@ import android.widget.FrameLayout;
 import android.widget.ListView;
 
 import com.example.n9262.note_demo.R;
+import com.example.n9262.note_demo.adapter.NaviListAdapter;
+import com.example.n9262.note_demo.fragment.AllNoteFragment;
+import com.example.n9262.note_demo.fragment.SearchNoteFragment;
+import com.example.n9262.note_demo.fragment.SettingFragment;
+
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity implements Toolbar.OnMenuItemClickListener, AdapterView.OnItemClickListener {
@@ -33,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements Toolbar.OnMenuIte
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mFragments[0] = new AllNotesFragment();
+        mFragments[0] = new AllNoteFragment();
         mFragments[1] = new SearchNoteFragment();
         mFragments[2] = new SettingFragment();
         initView();
@@ -57,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements Toolbar.OnMenuIte
     }
 
     private void showFragment() {
-        AllNotesFragment notesFragment = new AllNotesFragment();
+        AllNoteFragment notesFragment = new AllNoteFragment();
         getFragmentManager().beginTransaction().replace(R.id.id_fl_main_content, notesFragment).commit();
     }
 
@@ -79,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements Toolbar.OnMenuIte
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.id_menu_add_note:
-                Intent intent = new Intent(this, NoteDetailActivity.class);
+                Intent intent = new Intent(this, NoteDetailsActivity.class);
                 startActivity(intent);
                 break;
         }

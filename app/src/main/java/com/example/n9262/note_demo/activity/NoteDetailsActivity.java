@@ -7,14 +7,18 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.n9262.note_demo.R;
+import com.example.n9262.note_demo.bean.Note;
+import com.example.n9262.note_demo.db.NoteDAO;
+import com.example.n9262.note_demo.utils.TextFormatUtil;
+
 import java.util.Date;
-public class NoteDetailActivity extends AppCompatActivity implements View.OnClickListener {
+public class NoteDetailsActivity extends AppCompatActivity implements View.OnClickListener {
 
     public static final String SENDED_NOTE_ID = "note_id";
     private EditText mEtTitle;
