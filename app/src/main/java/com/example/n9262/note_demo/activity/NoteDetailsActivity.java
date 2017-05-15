@@ -13,16 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.yangtianrui.notebook.R;
-import com.example.yangtianrui.notebook.bean.Note;
-import com.example.yangtianrui.notebook.db.NoteDAO;
-import com.example.yangtianrui.notebook.util.TextFormatUtil;
-
 import java.util.Date;
-
-/**
- * Created by yangtianrui on 16-5-22.
- */
 public class NoteDetailActivity extends AppCompatActivity implements View.OnClickListener {
 
     public static final String SENDED_NOTE_ID = "note_id";

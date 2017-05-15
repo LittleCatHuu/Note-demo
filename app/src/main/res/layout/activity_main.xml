@@ -6,13 +6,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.n9262.note_demo.activity.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+
+    <!-- 引入Toolbar-->
+    <include
+        android:id="@+id/id_toolbar"
+        layout="@layout/toolbar_main" />
+    <!-- 主界面 -->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/id_dl_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_toolbar">
+
+        <FrameLayout
+            android:id="@+id/id_fl_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ListView
+            android:id="@+id/id_lv_navi"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#dddddd"
+            android:divider="@color/navi_divider"
+            android:dividerHeight="0dp" />
+    </android.support.v4.widget.DrawerLayout>
 </RelativeLayout>

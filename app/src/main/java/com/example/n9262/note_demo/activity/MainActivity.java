@@ -15,12 +15,6 @@ import android.widget.FrameLayout;
 import android.widget.ListView;
 
 import com.example.n9262.note_demo.R;
-import com.example.yangtianrui.notebook.R;
-import com.example.yangtianrui.notebook.adapter.NaviListAdapter;
-import com.example.yangtianrui.notebook.fragment.AllNotesFragment;
-import com.example.yangtianrui.notebook.fragment.SearchNoteFragment;
-import com.example.yangtianrui.notebook.fragment.SettingFragment;
-
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity implements Toolbar.OnMenuItemClickListener, AdapterView.OnItemClickListener {
